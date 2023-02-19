@@ -36,13 +36,9 @@ MeasDist = [5 15 25 35 45 55 65 75]; % Distance along profile, from outlet to in
 
 %% ENTER RANGE OF DPDT, FRAGMENTATION PRESSURES, AND BUBBLE RADII TO ITERATE THROUGH. MIDDLE NUMBER IS STEP SIZE.
 
-% dPdt = (0.005:0.001:0.05); % dPdt to iterate through to find best fit to data [MPa/s]
-% P_f = (0:5:50); % P_f to iterate through to find best fit to data [MPa]
-% radius = (0.1:10:100.1); % Radii to iterate through to find best fit to data
-
-dPdt = (0.008); % dPdt to iterate through to find best fit to data [MPa/s]
-P_f = (30); % P_f to iterate through to find best fit to data [MPa]
-radius = (0.1); % Radii to iterate through to find best fit to data
+dPdt = (0.005:0.001:0.05); % dPdt to iterate through to find best fit to data [MPa/s]
+P_f = (0:5:50); % P_f to iterate through to find best fit to data [MPa]
+radius = (0.1:10:100.1); % Radii to iterate through to find best fit to data
 
 % Supplemental table from Myers et al. (2018): bubble radius 30-40 = 1 wt. %, 60-80 = 2 wt. %, 100-120 = 3 wt. %
 
