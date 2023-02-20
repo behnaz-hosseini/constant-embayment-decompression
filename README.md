@@ -9,7 +9,7 @@ Download both emb_diffusion.m (master script) and diffusion_function.m (function
 
 emb_diffusion.m is the main code where all input parameters are defined and the misfit is calculated. 
     Lines 20-26: specify input parameters, including initial pressure (MPa), embayment length (um), initial H2O (wt. %), melt density (kg/m^3), 
-                 temperature (C), and uncertainties.
+                 temperature (C), and uncertainties. 
     Lines 33-35: enter H2O +/- CO2 concentrations (wt. % and ppm, respectively), as well as distance along the measured profile (um). All arrays 
                  go from embayment outlet to the interior.
     Lines 39-41: specify the range of decompression rates (MPa/s), fragmentation pressures (MPa), and bubble radii to iterate through.
