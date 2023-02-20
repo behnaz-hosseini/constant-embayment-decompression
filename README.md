@@ -13,4 +13,6 @@ initial pressure (MPa), embayment length (um), initial H2O (wt. %), melt density
 +/- CO2 concentrations (wt. % and ppm, respectively), as well as distance along the measured profile (um). All arrays go from embayment outlet to the
 interior. On lines 39-41: specify the range of decompression rates (MPa/s), fragmentation pressures (MPa), and bubble radii to iterate through.
 
-Diffusion_function_1D_constant.m is the function that performs the diffusion calculation. User does not need to modify.
+diffusion_function.m is the function that performs the diffusion calculation. User does not need to modify.
+
+example_output.tiff shows the best fit model profiles to the measured H2O and CO2 concentration gradients for the example embayment.
