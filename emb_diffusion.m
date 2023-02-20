@@ -42,7 +42,7 @@ radius = (0.1:10:100.1); % Radii to iterate through to find best fit to data
 
 % Supplemental table from Myers et al. (2018): bubble radius 30-40 = 1 wt. %, 60-80 = 2 wt. %, 100-120 = 3 wt. %
 
-%% CALCULATE DPDT, P_f, AND RADIUS THAT GENERATE THE LEAST MISFIT WITH THE MEASURED DATA.
+%% CALCULATE DPDT, P_F, AND RADIUS THAT GENERATE THE LEAST MISFIT WITH THE MEASURED DATA.
 
 misfit = zeros(length(dPdt),length(P_f),length(radius));
 
