@@ -163,7 +163,7 @@ CO2_moles_bubble = (CO2_flux * 4 * pi * radius_meters^2) * dt + CO2_moles_bubble
 H2Ov = H2O_moles_bubble/(H2O_moles_bubble + CO2_moles_bubble)*100; % Mole percent of H2O in vapor
 Xw = H2Ov/100; % Mole fraction of H2O in vapor
 Pw = P * Xw; % Partial pressure of water in vapor
-CO2v = CO2_moles_bubble/(H2O_moles_bubble + CO2_moles_bubble)*100;
+CO2v = CO2_moles_bubble/(H2O_moles_bubble + CO2_moles_bubble)*100; % Mole percent of CO2 in vapor
 Xc = CO2v/100; % Mole fraction of CO2 in vapor
 Pc = P * Xc; % Partial pressure of CO2 in vapor
 
