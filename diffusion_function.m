@@ -35,7 +35,7 @@ Pc = CO2v_i / 100 * P_i; % Outputs initial CO2 in vapor phase [mol %]
 
 radius_meters = radius/(10^6); % Bubble radius (m) 
 bubble_volume = 4/3 * pi * radius_meters.^3; % Volume of bubble (m^3)
-P_i_Pa = P_i * 1000000; % initial pressure (Pa)
+P_i_Pa = P_i * 1000000; % Initial pressure (Pa)
 
 % Solve for moles H2O and CO2 using Ideal Gas Law
 moles_total_i = (P_i_Pa * bubble_volume)/(R * TK); % Total moles of gas
@@ -45,7 +45,7 @@ moles_CO2_i = moles_total_i * CO2v_i/100;
 %% Initialize all arrays
 % CO2, H2O, X_mole_fraction, dD_CO2, dD_H2O, d_H2O, d_CO2, d2_H2O, d2_CO2, D_H2O, D_CO2 length arrays 
 
-% CO2 and H2O concentration arrays (wt. % and ppm, respectively)
+% H2O and CO2 concentration arrays (wt. % and ppm, respectively)
 H2O_array = zeros(nnodes,1);
 CO2_array = zeros(nnodes,1);
 new_H2O_array = zeros(nnodes,1);
@@ -60,13 +60,13 @@ X_mole_fraction = zeros(nnodes,1);
 
 % Initial concentrations in H2O and CO2 arrays
 for k = 1:nnodes
-    CO2_array(k) = CO2_i;
     H2O_array(k) = H2O_i;
+    CO2_array(k) = CO2_i;
 end
 
 % Derivative arrays
-dD_CO2 = zeros(nnodes,1);
 dD_H2O = zeros(nnodes,1);
+dD_CO2 = zeros(nnodes,1);
 d_H2O_array = zeros(nnodes,1);
 d_CO2_array = zeros(nnodes,1);
 d2_H2O_array = zeros(nnodes,1);
