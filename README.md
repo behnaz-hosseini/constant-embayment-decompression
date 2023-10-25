@@ -3,8 +3,7 @@
 # constant-embayment-decompression
 A MATLAB code (written in v. R2020a) for modeling diffusion of H2O and CO2 through rhyolitic melt embayments during constant, continuous magma
 decompression. The example is set up to fit H2O and CO2 concentration gradients measured along a 90-um long quartz-hosted rhyolitic melt embayment that was
-experimentally decompressed from 150 to 30 MPa at 780 C and a rate of 0.008 MPa/s. Please cite Hosseini et al. (2023), in revision at Geochemistry,
-Geophysics, Geosystems.
+experimentally decompressed from 150 to 30 MPa at 780 C and a rate of 0.008 MPa/s. Please cite [Hosseini et al. (2023)](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022GC010770).
 
 Instructions for running code:
 
